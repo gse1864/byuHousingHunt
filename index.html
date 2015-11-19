@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="housingApp">
+    <head>
+        
+        <title>BYU Housing Hunt</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            
+            <div style="background-color: red" class="body">
+                <div class="aC">
+                    <!--put an ng-repeat here?-->
+                    <div class="aptBox">
+
+                        <br>Unit Name Placeholder<br><br>
+                        <div class="aptImage">Image</div><br>
+                        Unit Pricing Placeholder<br><br>
+                        Unit Website Placeholder<br><br>
+                    </div>
+                </div>
+
+                <!--HEADER-->
+                <div class="header">
+
+                    <div class="title"><h1>
+                        BYU Housing Hunt
+                    </h1></div>
+
+                    <div class="filtersContainer">
+
+                        <div class="filter unitDetails">
+
+                            <b>Unit Details</b>
+                            <br><br>
+
+                            <input type="checkbox" value="mens">Men's 
+                            <input type="checkbox" value="womens">Women's
+                            <br><hr>
+
+                            Type: 
+                            <select>
+                                <option value=""></option>
+                                <option value="apartment">Apartment</option>
+                                <option value="condo">Condo</option>
+                                <option value="house">House</option>
+                            </select>
+                            <br><hr>
+
+                            Tenants: 
+                            <select>
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <br><hr>
+
+                            Walkscore: 
+                            <select>
+                                <option value=""></option>
+                                <option value="10 or more">10 or more</option>
+                                <option value="20 or more">20 or more</option>
+                                <option value="30 or more">30 or more</option>
+                                <option value="40 or more">40 or more</option>
+                                <option value="50 or more">50 or more</option>
+                                <option value="60 or more">60 or more</option>
+                                <option value="70 or more">70 or more</option>
+                                <option value="80 or more">80 or more</option>
+                                <option value="90 or more">90 or more</option>
+                            </select>
+                            
+                            <br><br>
+
+                        </div> <!--end unitDetails-->
+
+                        <br>
+
+                        <div class="filter rent">
+
+                            <b>Rent</b>
+                            <br><br>
+
+                            <b>Year-Round</b><br>
+                            Min: $<input class="minMax" type="number">
+                            Max: $<input class="minMax" type="number">
+                            <br><br>
+
+                            <b>Fall/Winter</b><br>
+                            Min: $<input class="minMax" type="number">
+                            Max: $<input class="minMax" type="number">
+                            <br><br>
+
+                            <b>Spring/Summer</b><br>
+                            Min: $<input class="minMax" type="number">
+                            Max: $<input class="minMax" type="number">
+                            <br><br>
+
+                        </div> <!--end rent filter-->
+
+                        <br>
+
+                        <div class="filter amenities">
+
+                            <b>Amenities</b>
+                            <br><br>
+                            Coming soon!
+                            <br><br>
+
+                        </div> <!--end amenities filter-->
+
+                        <br>
+
+                    </div> <!--end filtersContainer-->
+
+                    <!--FOOTER-->
+                    <div class="footer">
+
+                        <div class="footerText"><p>BYU Housing Hunt is created<br> and maintained by Emily Goddard</p></div>
+
+                    </div> <!--end footer-->
+
+                </div> <!--end header-->
+            
+            </div> <!--end body-->
+            
+        </div> <!--end container-->
+        
+        <!--SCRIPTS-->
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
