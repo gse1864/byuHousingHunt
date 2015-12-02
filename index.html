@@ -23,21 +23,19 @@
                     </div>
                 </div>
 
-                <!--HEADER-->
-                <div class="header">
+                <!--MENU-->
+                <div class="menu">
 
                     <div class="title"><h1>
                         BYU Housing Hunt
                     </h1></div>
 
-                    <div class="filtersContainer">
+                    <div class="filtersContainer" ng-controller="menuCtrl">
 
-                        <div class="filterHeader">UNIT DETAILS</div>
+                        <div class="filterHeader" ng-click="showDetailsFilter()">UNIT DETAILS</div>
                         
-                        <div class="filter unitDetails">
+                        <div class="filter unitDetails" ng-show="detailsIsClicked">
 
-                            <b>Unit Details</b>
-                            <br><br>
 
                             <input type="checkbox" value="mens">Men's 
                             <input type="checkbox" value="womens">Women's
@@ -84,9 +82,9 @@
 
                         <br>
 
-                        <div class="filterHeader">RENT</div>
+                        <div class="filterHeader" ng-click="showRentFilter()">RENT</div>
                         
-                        <div class="filter rent">
+                        <div class="filter rent" ng-show="rentIsClicked">
 
                             <b>Year-Round</b><br><hr>
                             Min: $<input class="minMax" type="number">
@@ -107,9 +105,9 @@
 
                         <br>
 
-                        <div class="filterHeader">AMENITIES</div>
+                        <div class="filterHeader" ng-click="showAmenitiesFilter()">AMENITIES</div>
                         
-                        <div class="filter amenities">
+                        <div class="filter amenities" ng-show="amenitiesIsClicked">
 
                             Coming soon!
                             <br><br>
@@ -127,7 +125,7 @@
 
                     </div> <!--end footer-->
 
-                </div> <!--end header-->
+                </div> <!--end menu-->
             
             </div> <!--end body-->
             
@@ -140,5 +138,7 @@
         <script src="js/app.js"></script>
         <script src="js/housingCtrl.js"></script>
         <script src="js/housingService.js"></script>
+        <script src="js/menuCtrl.js"></script>
+        <script src="js/menuService.js"></script>
     </body>
 </html>
